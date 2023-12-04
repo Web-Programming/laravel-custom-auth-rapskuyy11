@@ -6,7 +6,7 @@ use App\Models\Prodi;
 use App\Models\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
-class ProdiPolicy
+class ProdiController
 {
     use HandlesAuthorization;
 
@@ -42,10 +42,6 @@ class ProdiPolicy
     public function create(User $user)
     {
         //
-        return in_array($user->email, [
-            'rafli.llg2017@gmail.com',
-            'rafli@djauharigmail.com'
-        ]);
     }
 
     /**
